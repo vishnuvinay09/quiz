@@ -120,7 +120,7 @@ export default function NewQuestionPage() {
                 value={formData.class}
                 onChange={(e) => setFormData({ ...formData, class: e.target.value })}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-900"
               >
                 <option value="">Select Class</option>
                 {CLASSES.map((cls) => (
@@ -136,7 +136,7 @@ export default function NewQuestionPage() {
                 value={formData.subject}
                 onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-900"
               >
                 <option value="">Select Subject</option>
                 {SUBJECTS.map((subject) => (
@@ -155,7 +155,7 @@ export default function NewQuestionPage() {
                 type="text"
                 value={formData.chapter}
                 onChange={(e) => setFormData({ ...formData, chapter: e.target.value })}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-900"
               />
             </div>
             <div>
@@ -164,7 +164,7 @@ export default function NewQuestionPage() {
                 type="text"
                 value={formData.topic}
                 onChange={(e) => setFormData({ ...formData, topic: e.target.value })}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-900"
               />
             </div>
             <div>
@@ -173,7 +173,7 @@ export default function NewQuestionPage() {
                 type="text"
                 value={formData.subtopic}
                 onChange={(e) => setFormData({ ...formData, subtopic: e.target.value })}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-900"
               />
             </div>
           </div>
@@ -186,7 +186,7 @@ export default function NewQuestionPage() {
               value={formData.question_text}
               onChange={(e) => setFormData({ ...formData, question_text: e.target.value })}
               rows={4}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-900"
               placeholder="Enter question text..."
             />
           </div>
@@ -232,7 +232,7 @@ export default function NewQuestionPage() {
                       setOptions(newOptions)
                     }}
                     placeholder="Option text..."
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg mb-2"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg mb-2 text-gray-900"
                   />
                   <ImageUpload
                     onUploadComplete={(url) => {

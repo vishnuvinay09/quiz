@@ -180,7 +180,7 @@ export default function QuizConfigurePage() {
               onChange={(e) => updateConfig({ class: parseInt(e.target.value) })}
               required
               disabled={classes.length === 0}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-900"
             >
               <option value="">
                 {classes.length === 0 ? 'No classes available' : 'Select Class'}
@@ -201,7 +201,7 @@ export default function QuizConfigurePage() {
               onChange={(e) => updateConfig({ subject: e.target.value })}
               required
               disabled={subjects.length === 0}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-900"
             >
               <option value="">
                 {subjects.length === 0 ? 'No subjects available' : 'Select Subject'}
@@ -252,7 +252,7 @@ export default function QuizConfigurePage() {
                 onChange={(e) => updateConfig({ chapter: e.target.value })}
                 required
                 disabled={loading || chapters.length === 0}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-900"
               >
                 <option value="">
                   {loading
@@ -279,7 +279,7 @@ export default function QuizConfigurePage() {
                 onChange={(e) => updateConfig({ topic: e.target.value })}
                 required
                 disabled={loading || topics.length === 0}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-900"
               >
                 <option value="">
                   {loading
