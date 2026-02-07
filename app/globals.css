@@ -8,13 +8,8 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+/* Removed dark mode styles to prevent white text on white backgrounds */
+/* App is designed for light mode with explicit Tailwind color classes */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,6 +19,11 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+/* Ensure inputs have proper text color */
+input, textarea, select {
+  color: rgb(17, 24, 39); /* gray-900 */
 }
 
 @layer utilities {
